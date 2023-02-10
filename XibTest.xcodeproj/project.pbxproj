@@ -13,6 +13,11 @@
 		02BC8E462996EFAB0092AD9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BC8E442996EFAB0092AD9A /* Main.storyboard */; };
 		02BC8E482996EFAE0092AD9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02BC8E472996EFAE0092AD9A /* Assets.xcassets */; };
 		02BC8E4B2996EFAE0092AD9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BC8E492996EFAE0092AD9A /* LaunchScreen.storyboard */; };
+		02BC8E542996EFD00092AD9A /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BC8E532996EFD00092AD9A /* CustomView.xib */; };
+		02BC8E562996EFDB0092AD9A /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC8E552996EFDB0092AD9A /* CustomView.swift */; };
+		02BC8E592996F1190092AD9A /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC8E582996F1190092AD9A /* SimpleView.swift */; };
+		02BC8E5D2996F13C0092AD9A /* SimpleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BC8E5C2996F13C0092AD9A /* SimpleView.xib */; };
+		02BC8E602996F2790092AD9A /* ProgramaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC8E5F2996F2790092AD9A /* ProgramaticView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		02BC8E472996EFAE0092AD9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02BC8E4A2996EFAE0092AD9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02BC8E4C2996EFAE0092AD9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02BC8E532996EFD00092AD9A /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		02BC8E552996EFDB0092AD9A /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		02BC8E582996F1190092AD9A /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
+		02BC8E5C2996F13C0092AD9A /* SimpleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleView.xib; sourceTree = "<group>"; };
+		02BC8E5F2996F2790092AD9A /* ProgramaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaticView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 		02BC8E3D2996EFAB0092AD9A /* XibTest */ = {
 			isa = PBXGroup;
 			children = (
+				02BC8E612996F5330092AD9A /* XibViews */,
+				02BC8E5E2996F26A0092AD9A /* ProgramaticView */,
 				02BC8E3E2996EFAB0092AD9A /* AppDelegate.swift */,
 				02BC8E402996EFAB0092AD9A /* SceneDelegate.swift */,
 				02BC8E422996EFAB0092AD9A /* ViewController.swift */,
@@ -65,6 +77,41 @@
 				02BC8E4C2996EFAE0092AD9A /* Info.plist */,
 			);
 			path = XibTest;
+			sourceTree = "<group>";
+		};
+		02BC8E522996EFBC0092AD9A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				02BC8E532996EFD00092AD9A /* CustomView.xib */,
+				02BC8E552996EFDB0092AD9A /* CustomView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		02BC8E572996F1050092AD9A /* SimpleView */ = {
+			isa = PBXGroup;
+			children = (
+				02BC8E582996F1190092AD9A /* SimpleView.swift */,
+				02BC8E5C2996F13C0092AD9A /* SimpleView.xib */,
+			);
+			path = SimpleView;
+			sourceTree = "<group>";
+		};
+		02BC8E5E2996F26A0092AD9A /* ProgramaticView */ = {
+			isa = PBXGroup;
+			children = (
+				02BC8E5F2996F2790092AD9A /* ProgramaticView.swift */,
+			);
+			path = ProgramaticView;
+			sourceTree = "<group>";
+		};
+		02BC8E612996F5330092AD9A /* XibViews */ = {
+			isa = PBXGroup;
+			children = (
+				02BC8E522996EFBC0092AD9A /* CustomView */,
+				02BC8E572996F1050092AD9A /* SimpleView */,
+			);
+			path = XibViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				02BC8E4B2996EFAE0092AD9A /* LaunchScreen.storyboard in Resources */,
+				02BC8E542996EFD00092AD9A /* CustomView.xib in Resources */,
 				02BC8E482996EFAE0092AD9A /* Assets.xcassets in Resources */,
+				02BC8E5D2996F13C0092AD9A /* SimpleView.xib in Resources */,
 				02BC8E462996EFAB0092AD9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				02BC8E432996EFAB0092AD9A /* ViewController.swift in Sources */,
+				02BC8E602996F2790092AD9A /* ProgramaticView.swift in Sources */,
+				02BC8E562996EFDB0092AD9A /* CustomView.swift in Sources */,
+				02BC8E592996F1190092AD9A /* SimpleView.swift in Sources */,
 				02BC8E3F2996EFAB0092AD9A /* AppDelegate.swift in Sources */,
 				02BC8E412996EFAB0092AD9A /* SceneDelegate.swift in Sources */,
 			);
@@ -285,9 +337,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LXZ4NUYA86;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XibTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,8 +352,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wizeline.XibTest;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,9 +366,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LXZ4NUYA86;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XibTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,8 +381,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wizeline.XibTest;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
